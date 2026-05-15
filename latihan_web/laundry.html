@@ -19,35 +19,71 @@
         color: var(--token-ccb373e4-6935-4041-a278-02bb3381f46c, rgb(27, 178, 177));
         ;
     }
+
+    .header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+
+    }
+
+    .btn-color {
+        color: rgb(143, 122, 94);
+    }
+
+    .custom-card {
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .custom-card img {
+        border-radius: 20px;
+        padding: 10px;
+    }
+
+    .card-body h5 {
+        font-weight: bold;
+    }
+
+    .card-img-top {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        /* Ini kuncinya: gambar akan terpotong rapi, tidak gepeng */
+        border-radius: 15px !important;
+    }
 </style>
 
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg " style="height: 32px; font-size: 12px;">
-        <div class="container-fluid justify-content-end ">
-            <div class="d-flex justify-content-end">
-                <a href="#" class="nav-link text-white"><i class="fa-solid fa-phone"></i>+628 123 45678</a>
-                <a href="#" class="nav-link text-white"><i class="fa-solid fa-envelope"></i>laundryhub@gmail.com</a>
+    <div class="header">
+        <nav class="navbar navbar-expand-sm navbar-dark bg" style="height: 32px; font-size: 12px;">
+            <div class="container-fluid justify-content-end ">
+                <div class="d-flex justify-content-end">
+                    <a href="#" class="nav-link text-white"><i class="fa-solid fa-phone"></i>+628 123 45678</a>
+                    <a href="#" class="nav-link text-white"><i class="fa-solid fa-envelope"></i>laundryhub@gmail.com</a>
+                </div>
             </div>
-        </div>
-    </nav>
-    <nav class="navbar navbar-expand-lg bg-white p-0 shadow-sm">
-        <div class="container-fluid d-flex justify-content-between align-items-center px-4 py-3">
-            <div class="navbar-brand m-0">
-                <img src="images/da ganteng.avif" alt="Logo" style="height: 40px;">
+        </nav>
+        <nav class="navbar navbar-expand-lg bg-white p-0 justify-content-space-around">
+            <div class="container-fluid d-flex  px-5 py-3">
+                <div class="navbar-brand m-0">
+                    <img src="images/da ganteng.avif" alt="Logo" style="height: 35px;">
+                </div>
+                <div class="navbar-nav  gap-1 ">
+                    <a class="nav-link text-secondary " href="#">Home</a>
+                    <a class="nav-link text-secondary " href="#">Location</a>
+                    <a class="nav-link text-secondary " href="#">Services</a>
+                    <a class="nav-link text-secondary " href="#">About us</a>
+                </div>
+                <div>
+                    <a href="https://wa.me/62895337039221" class="btn  bg text-white px-4 py-2 fw-bold text-center" style="border-radius: 8px;  ">
+                        Contact Us
+                    </a>
+                </div>
             </div>
-            <div class="navbar-nav  gap-1 ">
-                <a class="nav-link text-dark fw-medium" href="#">Home</a>
-                <a class="nav-link text-dark fw-medium" href="#">Location</a>
-                <a class="nav-link text-dark fw-medium" href="#">Services</a>
-                <a class="nav-link text-dark fw-medium" href="#">About us</a>
-            </div>
-            <div>
-                <a href="#" class="btn  bg text-white px-4 py-2 fw-bold" style="border-radius: 8px;">
-                    Contact Us
-                </a>
-            </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
 
     <div class="container ">
         <div class="row">
@@ -63,29 +99,126 @@
                         <a href="#" class="btn  text-white bg p-3 px-4" style="border-radius: 12px; font-size: 20px;">
                             <i class="fa-solid fa-truck-fast me-2"></i>Schedule A Pickup
                         </a>
-                        <div class="d-flex mt-4">
-                            <img src="https://pravatar.cc">
-                            <img src="https://pravatar.cc">
-                            <img src="https://pravatar.cc">
-                            <img src="https://pravatar.cc">
-                        </div>
-                        <div class="ms-3">
-                            <div class="d-flex align-items-center">
-                                <span class="fw-bold fs-5 me-1">4.9+</span>
-                                <span class="text-warning fs-5">⭐</span>
-                                <span class="ms-1 fw-bold fs-5">Rating</span>
+                        <div class="d-flex align-items-center mt-5 ">
+                            <div class="d-flex">
+                                <img src="https://pravatar.cc">
+                                <img src="https://pravatar.cc">
+                                <img src="https://pravatar.cc">
+                                <img src="https://pravatar.cc">
                             </div>
-                            <p class="text-muted mb-0" style="font-size: 14px;">1200+ Reviews</p>
+                            <div class="ms-3">
+                                <strong>4.9 ⭐ Rating</strong><br>
+                                <small class="text-muted">1200+ Happy Customers</small>
+                            </div>
                         </div>
+
                     </div>
                     <div class="col-md-6">
-                        <video width="650px" height="600px" src="images/hes.mp4" autoplay muted loop fit
+                        <video width="645px" height="600px" src="images/hes.mp4" autoplay muted loop fit
                             style="object-fit: cover; border-radius: 20px;"></video>
                     </div>
                 </div>
             </div>
+            <div class="container mt-5 p-0">
+                <div class="card-header" style="border-radius: 20px; padding: 20px; border:  none;">
+                    <div class="row">
+                        <div class="col-md-8 p-5">
+                            <p class="fs-bold ">Affordable cleaning solutions</p>
+                            <h1 class="">FIND A LAUNDRY NEAR YOU</h1>
+                            <p class="text-secondary ">We make doing laundry easy with modern machines, a comfortable
+                                space, and multiple locations. Whether you're washing a few items or a big load,
+                                weve got everything you need for a quick and hassle-free laundry experience.</p>
+                            <a href="#" class="btn  text-white bg p-3 px-4"
+                                style="border-radius: 20px; font-size: 20px; ">
+                                <i class="fa-solid fa-location-dot me-2 "></i>Find Your nearest location
+                            </a>
+                        </div>
+                        <div class="col-md-4 justify-content-end">
+                            <img src="images/g.png" style="height: 400px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container text-center mt-5">
+                <a href="#" class="btn btn-outline-secondary"
+                    style="object-fit: cover; border-radius: 30px; font-size: 20px;">Services</a>
+            </div>
+            <div class="container mt-2">
+                <h1 class="text-center"> OUR LAUNDRY <span class="text">SERVICES</span></h1>
+            </div>
+            <div class="container mt-2 col-md-6">
+                <p class="text-secondary text-center" style="font-size: 20px;">While we can customize your cleaning plan
+                    to suit your needs, most clients schedule regular cleaning services:</p>
+            </div>
 
-
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-4 mt-4 ">
+                        <div class="card custom-card h-100">
+                            <img src="images/1.png" class="card-img-top" alt="laundry">
+                            <div class="card-body">
+                                <h5 class="card-title">SELF-SERVICE LAUNDRY</h5>
+                                <P class="card-text text-muted">Use modern, high-capacity washers and dryers for a quick
+                                    and smooth laundry process.</P>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-4">
+                        <div class="card custom-card h-100">
+                            <img src="images/2.png" class="card-img-top" alt="laundry">
+                            <div class="card-body">
+                                <h5 class="card-title">SELF-SERVICE LAUNDRY</h5>
+                                <P class="card-text text-muted">Convenient doorstep laundry pickup and delivery for
+                                    clean, fresh clothes without effort.</P>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-4 gap-1">
+                        <div class="card custom-card h-100">
+                            <img src="images/3.png" class="card-img-top" alt="laundry">
+                            <div class="card-body">
+                                <h5 class="card-title">SELF-SERVICE LAUNDRY</h5>
+                                <P class="card-text text-muted">Schedule a pickup or drop-off at your convenience.</P>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-4 gap-1 p-3">
+                        <div class="card custom-card h-100">
+                            <img src="images/4.png" class="card-img-top" alt="laundry">
+                            <div class="card-body">
+                                <h5 class="card-title">SELF-SERVICE LAUNDRY</h5>
+                                <P class="card-text text-muted">Schedule a pickup or drop-off at your convenience.</P>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-4 gap-1 p-3">
+                        <div class="card custom-card h-100">
+                            <img src="images/5.png" class="card-img-top" alt="laundry">
+                            <div class="card-body">
+                                <h5 class="card-title">SELF-SERVICE LAUNDRY</h5>
+                                <P class="card-text text-muted">Schedule a pickup or drop-off at your convenience.</P>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" container mt-5 ">
+                <div class="row">
+                    <div class="col-md-5">
+                        <button class="btn btn-outline-secondary "
+                            style="border-radius: 30px; font-weight: bold; width: 30%; font-size: 15px;">
+                            how it works</button>
+                        <h5 style="font-size: 40px;">How Our Pick & Drop Service Works</h5>
+                        <p style="font-size: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+                            odio odit eum,
+                            omnis
+                        </p>
+                        <a href="#" class="btn  text-white bg p-3 px-4" style="border-radius: 20px; font-size: 20px; ">
+                            <i class="fa-solid fa-location-dot me-2 "></i>Find Your nearest location
+                        </a>
+                    </div>
+                </div>
+            </div>
 </body>
 
 </html>
